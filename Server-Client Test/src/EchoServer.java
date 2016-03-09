@@ -49,6 +49,7 @@ public class EchoServer {
         ) {
             String inputLine;
             while ((inputLine = in.readLine()) != null) {
+                System.out.println(inputLine);
                 out.println(inputLine+" returned");
             }
         } catch (IOException e) {
